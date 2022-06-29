@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="" content="">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkShop</title>
+</head>
+<body>
+
+
+
+
+
+  <div class="container py-5">
+
+
+    
+    <div class="form-group">
+
+        <label for="productNameInput">ProductName :</label>
+        <input class="form-control" type="text" id="productNameInput">
+        <div id="alertErr" class="alert alert-danger d-none">
+            <p>error</p>
+        </div>
+
+
+    </div>
+
+    <div class="form-group">
+
+        <label for="productPriceInput">ProductPrice :</label>
+        <input class="form-control" type="number" id="productPriceInput">
+
+    </div>
+
+    <div class="form-group">
+
+        <label for="ProductCategoryInput">ProductCategory :</label>
+        <input class="form-control" type="text" id="ProductCategoryInput">
+
+    </div>
+
+    <div class="form-group">
+
+        <label for="productDescInput">ProductDescription :</label>
+        <textarea class="form-control" type="text" id="productDescInput"></textarea>
+    </div>
+
+
+
+    <button id="mainBtn" onclick="addProduct();" class="btn btn-outline-info">add Product</button>
+
+</div>
+
+
+
+
+
+<div class="container">
+
+  <input onkeyup="searchProduct(this.value)" placeholder="search product" class="form-control w-75 m-auto" type="text" name="" id="">
+
+  <table class="table my-4">
+      <thead>
+          <th>index</th>
+          <th>ProductName</th>
+          <th>ProductPrice</th>
+          <th>ProductCategory</th>
+          <th>ProductDesc</th>
+          <th>update</th>
+          <th>delete</th>
+
+      </thead>
+      <tbody id="tableBody">
+
+      </tbody>
+  </table>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js" ></script>
+
+</body>
+</html>
